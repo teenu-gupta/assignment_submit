@@ -1,0 +1,46 @@
+<html>
+<head>
+<script type="text/javascript">
+
+function reveal_sentences(clicked_id){ 
+var obj1={"sent_5": "", "sent_4": "this section describes some of the commonly used documented artifacts related to software testing such as", "sent_7": "", "sent_6": "testing documentation involves theyour your your documentation of artifacts that should be developed before or during the testing of software", "sent_1": "", "sent_0": "testing documentation involves the documentation of artifacts that should be developed before or during the testing of software", "sent_3": "documentation for software testing helps in your estimating the testing effort required test coverage requirement tracking tracing etc", "sent_2": "documentation for software testing helps in your estimating the testing effort required test coverage requirement tracking tracing etc", "sent_9": "this section describes some of the commonly used documented artifacts related to software testing such as", "sent_8": "documentation for software testing helps in estimating the testing effort required test coverage requirement tracking tracing etc"}
+var obj2 =
+{"used_documented": ["sent_4", "sent_9"], "documented_artifacts": ["sent_4", "sent_9"], "tracking_tracing": ["sent_3", "sent_2", "sent_8"], "testing_documentation": ["sent_6", "sent_0"], "requirement_tracking": ["sent_3", "sent_2", "sent_8"], "involves_documentation": ["sent_0"], "documentation_artifacts": ["sent_6", "sent_0"], "estimating_testing": ["sent_3", "sent_2", "sent_8"], "related_software": ["sent_4", "sent_9"], "artifacts_related": ["sent_4", "sent_9"], "commonly_used": ["sent_4", "sent_9"], "test_coverage": ["sent_3", "sent_2", "sent_8"], "testing_effort": ["sent_3", "sent_2", "sent_8"], "section_describes": ["sent_4", "sent_9"], "tracing_etc": ["sent_3", "sent_2", "sent_8"], "developed_testing": ["sent_6", "sent_0"], "describes_commonly": ["sent_4", "sent_9"], "helps_estimating": ["sent_3", "sent_2", "sent_8"], "theyour_documentation": ["sent_6"], "involves_theyour": ["sent_6"], "documentation_software": ["sent_3", "sent_2", "sent_8"], "coverage_requirement": ["sent_3", "sent_2", "sent_8"], "required_test": ["sent_3", "sent_2", "sent_8"], "testing_helps": ["sent_3", "sent_2", "sent_8"], "effort_required": ["sent_3", "sent_2", "sent_8"], "artifacts_developed": ["sent_6", "sent_0"], "documentation_involves": ["sent_6", "sent_0"], "testing_software": ["sent_6", "sent_0"], "software_testing": ["sent_4", "sent_3", "sent_2", "sent_9", "sent_8"]}
+var value = null;
+	var a= [];
+	var i=0;	var j=0;
+for(var key in obj2)	
+{
+	if(String(key) == String(clicked_id)){a = obj2[key];}}
+	document.getElementById(clicked_id).innerHTML = String(a);}</script>
+<head>
+<body><font size=2 id="artifacts_developed" onclick="reveal_sentences(this.id)" color=orange style="text-transform: lowercase";>artifacts_developed</font>
+<font size=2 id="artifacts_related" onclick="reveal_sentences(this.id)" color=red style="text-transform: capitalize";>artifacts_related</font>
+<font size=2 id="commonly_used" onclick="reveal_sentences(this.id)" color=yellow style="text-transform: lowercase";>commonly_used</font>
+<font size=3 id="coverage_requirement" onclick="reveal_sentences(this.id)" color=orange style="text-transform: uppercase";>coverage_requirement</font>
+</br><font size=2 id="describes_commonly" onclick="reveal_sentences(this.id)" color=red style="text-transform: lowercase";>describes_commonly</font>
+<font size=2 id="developed_testing" onclick="reveal_sentences(this.id)" color=black style="text-transform: capitalize";>developed_testing</font>
+<font size=2 id="documentation_artifacts" onclick="reveal_sentences(this.id)" color=grey style="text-transform: uppercase";>documentation_artifacts</font>
+<font size=2 id="documentation_involves" onclick="reveal_sentences(this.id)" color=black style="text-transform: lowercase";>documentation_involves</font>
+</br><font size=3 id="documentation_software" onclick="reveal_sentences(this.id)" color=grey style="text-transform: uppercase";>documentation_software</font>
+<font size=2 id="documented_artifacts" onclick="reveal_sentences(this.id)" color=yellow style="text-transform: capitalize";>documented_artifacts</font>
+<font size=3 id="effort_required" onclick="reveal_sentences(this.id)" color=blue style="text-transform: lowercase";>effort_required</font>
+<font size=3 id="estimating_testing" onclick="reveal_sentences(this.id)" color=blue style="text-transform: lowercase";>estimating_testing</font>
+</br><font size=3 id="helps_estimating" onclick="reveal_sentences(this.id)" color=green style="text-transform: capitalize";>helps_estimating</font>
+<font size=1 id="involves_documentation" onclick="reveal_sentences(this.id)" color=red style="text-transform: uppercase";>involves_documentation</font>
+<font size=1 id="involves_theyour" onclick="reveal_sentences(this.id)" color=red style="text-transform: lowercase";>involves_theyour</font>
+<font size=2 id="related_software" onclick="reveal_sentences(this.id)" color=black style="text-transform: capitalize";>related_software</font>
+</br><font size=3 id="required_test" onclick="reveal_sentences(this.id)" color=green style="text-transform: lowercase";>required_test</font>
+<font size=3 id="requirement_tracking" onclick="reveal_sentences(this.id)" color=grey style="text-transform: lowercase";>requirement_tracking</font>
+<font size=2 id="section_describes" onclick="reveal_sentences(this.id)" color=blue style="text-transform: uppercase";>section_describes</font>
+<font size=5 id="software_testing" onclick="reveal_sentences(this.id)" color=black style="text-transform: capitalize";>software_testing</font>
+</br><font size=3 id="test_coverage" onclick="reveal_sentences(this.id)" color=orange style="text-transform: lowercase";>test_coverage</font>
+<font size=2 id="testing_documentation" onclick="reveal_sentences(this.id)" color=black style="text-transform: lowercase";>testing_documentation</font>
+<font size=3 id="testing_effort" onclick="reveal_sentences(this.id)" color=red style="text-transform: uppercase";>testing_effort</font>
+<font size=3 id="testing_helps" onclick="reveal_sentences(this.id)" color=red style="text-transform: lowercase";>testing_helps</font>
+</br><font size=2 id="testing_software" onclick="reveal_sentences(this.id)" color=grey style="text-transform: uppercase";>testing_software</font>
+<font size=1 id="theyour_documentation" onclick="reveal_sentences(this.id)" color=green style="text-transform: lowercase";>theyour_documentation</font>
+<font size=3 id="tracing_etc" onclick="reveal_sentences(this.id)" color=yellow style="text-transform: uppercase";>tracing_etc</font>
+<font size=3 id="tracking_tracing" onclick="reveal_sentences(this.id)" color=orange style="text-transform: lowercase";>tracking_tracing</font>
+</br><font size=2 id="used_documented" onclick="reveal_sentences(this.id)" color=orange style="text-transform: capitalize";>used_documented</font>
+</body></html>
