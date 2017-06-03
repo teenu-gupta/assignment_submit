@@ -26,7 +26,7 @@ def create_tag_cloud(words_dict,sort_words,f,colors_list,cases_list):
 	for i in sorted_list:
 		
 		counter +=1
-		val = "<font size="+str(words_dict[i]) +" id=\"" + str(i)+"\" onclick=\"reveal_sentences(this.id)\" color=" + random.choice(colors_list) +" style=\"text-transform: "+random.choice(cases_list)+"\";>" + i + "</font>"
+		val = "<font size="+str(words_dict[i]) +" id=\"" + str(i.replace(" ","_"))+"\" onclick=\"reveal_sentences(this.id)\" color=" + random.choice(colors_list) +" style=\"text-transform: "+random.choice(cases_list)+"\";>" + i.replace("_"," ") + "</font>"
 		
 		print val
 
@@ -115,7 +115,7 @@ if __name__ == '__main__':
 	f.write("\n")
 	f.write(str(words_sent_dict))
 	f.write("\n")
-	f.write("var value = null;")
+	f.write("var value = \" \";")
 	f.write("\n")
 	f.write("\t")
 	f.write("var a= [];")
@@ -132,7 +132,8 @@ if __name__ == '__main__':
 	f.write("\n\t")
 	f.write("if(String(key) == String(clicked_id)){a = obj2[key];}}")
 	f.write("\n\t")
-	f.write("document.getElementById(clicked_id).innerHTML = String(a);}")
+	f.write("for(var i in a){value = \" \" + obj1[a[i]]  + \"  \";}")
+	f.write("document.getElementById(clicked_id).innerHTML = String(value);}")
 	f.write("</script>")
 	f.write("\n")
 	f.write("<head>")
