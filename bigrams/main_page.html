@@ -3,44 +3,51 @@
 <script type="text/javascript">
 
 function reveal_sentences(clicked_id){ 
-var obj1={"sent_5": "", "sent_4": "this section describes some of the commonly used documented artifacts related to software testing such as", "sent_7": "", "sent_6": "testing documentation involves theyour your your documentation of artifacts that should be developed before or during the testing of software", "sent_1": "", "sent_0": "testing documentation involves the documentation of artifacts that should be developed before or during the testing of software", "sent_3": "documentation for software testing helps in your estimating the testing effort required test coverage requirement tracking tracing etc", "sent_2": "documentation for software testing helps in your estimating the testing effort required test coverage requirement tracking tracing etc", "sent_9": "this section describes some of the commonly used documented artifacts related to software testing such as", "sent_8": "documentation for software testing helps in estimating the testing effort required test coverage requirement tracking tracing etc"}
+var obj1={"sent_4": "documents but does not stipulate whether they must all be produced nor does it include any criteria regarding adequate content for these documents", "sent_1": "software and system test documentation", "sent_0": "ieee - also known as the standard for", "sent_3": "a set of documents for use in eight defined stages of software testing and system testing each stage potentially producing its own separate type of document the standard specifies the format of these", "sent_2": "is an ieee standard that specifies the form of"}
 var obj2 =
-{"used_documented": ["sent_4", "sent_9"], "documented_artifacts": ["sent_4", "sent_9"], "tracking_tracing": ["sent_3", "sent_2", "sent_8"], "testing_documentation": ["sent_6", "sent_0"], "requirement_tracking": ["sent_3", "sent_2", "sent_8"], "involves_documentation": ["sent_0"], "documentation_artifacts": ["sent_6", "sent_0"], "estimating_testing": ["sent_3", "sent_2", "sent_8"], "related_software": ["sent_4", "sent_9"], "artifacts_related": ["sent_4", "sent_9"], "commonly_used": ["sent_4", "sent_9"], "test_coverage": ["sent_3", "sent_2", "sent_8"], "testing_effort": ["sent_3", "sent_2", "sent_8"], "section_describes": ["sent_4", "sent_9"], "tracing_etc": ["sent_3", "sent_2", "sent_8"], "developed_testing": ["sent_6", "sent_0"], "describes_commonly": ["sent_4", "sent_9"], "helps_estimating": ["sent_3", "sent_2", "sent_8"], "theyour_documentation": ["sent_6"], "involves_theyour": ["sent_6"], "documentation_software": ["sent_3", "sent_2", "sent_8"], "coverage_requirement": ["sent_3", "sent_2", "sent_8"], "required_test": ["sent_3", "sent_2", "sent_8"], "testing_helps": ["sent_3", "sent_2", "sent_8"], "effort_required": ["sent_3", "sent_2", "sent_8"], "artifacts_developed": ["sent_6", "sent_0"], "documentation_involves": ["sent_6", "sent_0"], "testing_software": ["sent_6", "sent_0"], "software_testing": ["sent_4", "sent_3", "sent_2", "sent_9", "sent_8"]}
-var value = null;
+{"stage_potentially": ["sent_3"], "ieee_standard": ["sent_2"], "testing_stage": ["sent_3"], "include_criteria": ["sent_4"], "software_system": ["sent_1"], "produced_include": ["sent_4"], "stipulate_whether": ["sent_4"], "ieee_-": ["sent_0"], "system_testing": ["sent_3"], "documents_stipulate": ["sent_4"], "stages_software": ["sent_3"], "specifies_format": ["sent_3"], "eight_defined": ["sent_3"], "known_standard": ["sent_0"], "set_documents": ["sent_3"], "producing_separate": ["sent_3"], "document_standard": ["sent_3"], "content_documents": ["sent_4"], "use_eight": ["sent_3"], "-_also": ["sent_0"], "system_test": ["sent_1"], "criteria_regarding": ["sent_4"], "adequate_content": ["sent_4"], "also_known": ["sent_0"], "testing_system": ["sent_3"], "whether_must": ["sent_4"], "type_document": ["sent_3"], "defined_stages": ["sent_3"], "regarding_adequate": ["sent_4"], "standard_specifies": ["sent_3", "sent_2"], "separate_type": ["sent_3"], "test_documentation": ["sent_1"], "documents_use": ["sent_3"], "potentially_producing": ["sent_3"], "software_testing": ["sent_3"], "must_produced": ["sent_4"]}
+var value = " ";
 	var a= [];
 	var i=0;	var j=0;
 for(var key in obj2)	
 {
 	if(String(key) == String(clicked_id)){a = obj2[key];}}
-	document.getElementById(clicked_id).innerHTML = String(a);}</script>
+	for(var i in a){value = " " + obj1[a[i]]  + "  ";}document.getElementById(clicked_id).innerHTML = String(value);}</script>
 <head>
-<body><font size=2 id="artifacts_developed" onclick="reveal_sentences(this.id)" color=orange style="text-transform: lowercase";>artifacts_developed</font>
-<font size=2 id="artifacts_related" onclick="reveal_sentences(this.id)" color=red style="text-transform: capitalize";>artifacts_related</font>
-<font size=2 id="commonly_used" onclick="reveal_sentences(this.id)" color=yellow style="text-transform: lowercase";>commonly_used</font>
-<font size=3 id="coverage_requirement" onclick="reveal_sentences(this.id)" color=orange style="text-transform: uppercase";>coverage_requirement</font>
-</br><font size=2 id="describes_commonly" onclick="reveal_sentences(this.id)" color=red style="text-transform: lowercase";>describes_commonly</font>
-<font size=2 id="developed_testing" onclick="reveal_sentences(this.id)" color=black style="text-transform: capitalize";>developed_testing</font>
-<font size=2 id="documentation_artifacts" onclick="reveal_sentences(this.id)" color=grey style="text-transform: uppercase";>documentation_artifacts</font>
-<font size=2 id="documentation_involves" onclick="reveal_sentences(this.id)" color=black style="text-transform: lowercase";>documentation_involves</font>
-</br><font size=3 id="documentation_software" onclick="reveal_sentences(this.id)" color=grey style="text-transform: uppercase";>documentation_software</font>
-<font size=2 id="documented_artifacts" onclick="reveal_sentences(this.id)" color=yellow style="text-transform: capitalize";>documented_artifacts</font>
-<font size=3 id="effort_required" onclick="reveal_sentences(this.id)" color=blue style="text-transform: lowercase";>effort_required</font>
-<font size=3 id="estimating_testing" onclick="reveal_sentences(this.id)" color=blue style="text-transform: lowercase";>estimating_testing</font>
-</br><font size=3 id="helps_estimating" onclick="reveal_sentences(this.id)" color=green style="text-transform: capitalize";>helps_estimating</font>
-<font size=1 id="involves_documentation" onclick="reveal_sentences(this.id)" color=red style="text-transform: uppercase";>involves_documentation</font>
-<font size=1 id="involves_theyour" onclick="reveal_sentences(this.id)" color=red style="text-transform: lowercase";>involves_theyour</font>
-<font size=2 id="related_software" onclick="reveal_sentences(this.id)" color=black style="text-transform: capitalize";>related_software</font>
-</br><font size=3 id="required_test" onclick="reveal_sentences(this.id)" color=green style="text-transform: lowercase";>required_test</font>
-<font size=3 id="requirement_tracking" onclick="reveal_sentences(this.id)" color=grey style="text-transform: lowercase";>requirement_tracking</font>
-<font size=2 id="section_describes" onclick="reveal_sentences(this.id)" color=blue style="text-transform: uppercase";>section_describes</font>
-<font size=5 id="software_testing" onclick="reveal_sentences(this.id)" color=black style="text-transform: capitalize";>software_testing</font>
-</br><font size=3 id="test_coverage" onclick="reveal_sentences(this.id)" color=orange style="text-transform: lowercase";>test_coverage</font>
-<font size=2 id="testing_documentation" onclick="reveal_sentences(this.id)" color=black style="text-transform: lowercase";>testing_documentation</font>
-<font size=3 id="testing_effort" onclick="reveal_sentences(this.id)" color=red style="text-transform: uppercase";>testing_effort</font>
-<font size=3 id="testing_helps" onclick="reveal_sentences(this.id)" color=red style="text-transform: lowercase";>testing_helps</font>
-</br><font size=2 id="testing_software" onclick="reveal_sentences(this.id)" color=grey style="text-transform: uppercase";>testing_software</font>
-<font size=1 id="theyour_documentation" onclick="reveal_sentences(this.id)" color=green style="text-transform: lowercase";>theyour_documentation</font>
-<font size=3 id="tracing_etc" onclick="reveal_sentences(this.id)" color=yellow style="text-transform: uppercase";>tracing_etc</font>
-<font size=3 id="tracking_tracing" onclick="reveal_sentences(this.id)" color=orange style="text-transform: lowercase";>tracking_tracing</font>
-</br><font size=2 id="used_documented" onclick="reveal_sentences(this.id)" color=orange style="text-transform: capitalize";>used_documented</font>
-</body></html>
+<body><font size=1 id="-_also" onclick="reveal_sentences(this.id)" color=blue style="text-transform: lowercase";>- also</font>
+<font size=1 id="adequate_content" onclick="reveal_sentences(this.id)" color=green style="text-transform: lowercase";>adequate content</font>
+<font size=1 id="also_known" onclick="reveal_sentences(this.id)" color=black style="text-transform: capitalize";>also known</font>
+<font size=1 id="content_documents" onclick="reveal_sentences(this.id)" color=red style="text-transform: capitalize";>content documents</font>
+</br><font size=1 id="criteria_regarding" onclick="reveal_sentences(this.id)" color=grey style="text-transform: lowercase";>criteria regarding</font>
+<font size=1 id="defined_stages" onclick="reveal_sentences(this.id)" color=green style="text-transform: capitalize";>defined stages</font>
+<font size=1 id="document_standard" onclick="reveal_sentences(this.id)" color=green style="text-transform: uppercase";>document standard</font>
+<font size=1 id="documents_stipulate" onclick="reveal_sentences(this.id)" color=green style="text-transform: lowercase";>documents stipulate</font>
+</br><font size=1 id="documents_use" onclick="reveal_sentences(this.id)" color=green style="text-transform: lowercase";>documents use</font>
+<font size=1 id="eight_defined" onclick="reveal_sentences(this.id)" color=red style="text-transform: capitalize";>eight defined</font>
+<font size=1 id="ieee_-" onclick="reveal_sentences(this.id)" color=yellow style="text-transform: capitalize";>ieee -</font>
+<font size=1 id="ieee_standard" onclick="reveal_sentences(this.id)" color=grey style="text-transform: lowercase";>ieee standard</font>
+</br><font size=1 id="include_criteria" onclick="reveal_sentences(this.id)" color=orange style="text-transform: lowercase";>include criteria</font>
+<font size=1 id="known_standard" onclick="reveal_sentences(this.id)" color=black style="text-transform: capitalize";>known standard</font>
+<font size=1 id="must_produced" onclick="reveal_sentences(this.id)" color=orange style="text-transform: lowercase";>must produced</font>
+<font size=1 id="potentially_producing" onclick="reveal_sentences(this.id)" color=grey style="text-transform: uppercase";>potentially producing</font>
+</br><font size=1 id="produced_include" onclick="reveal_sentences(this.id)" color=red style="text-transform: capitalize";>produced include</font>
+<font size=1 id="producing_separate" onclick="reveal_sentences(this.id)" color=orange style="text-transform: uppercase";>producing separate</font>
+<font size=1 id="regarding_adequate" onclick="reveal_sentences(this.id)" color=green style="text-transform: uppercase";>regarding adequate</font>
+<font size=1 id="separate_type" onclick="reveal_sentences(this.id)" color=blue style="text-transform: capitalize";>separate type</font>
+</br><font size=1 id="set_documents" onclick="reveal_sentences(this.id)" color=yellow style="text-transform: uppercase";>set documents</font>
+<font size=1 id="software_system" onclick="reveal_sentences(this.id)" color=orange style="text-transform: capitalize";>software system</font>
+<font size=1 id="software_testing" onclick="reveal_sentences(this.id)" color=green style="text-transform: capitalize";>software testing</font>
+<font size=1 id="specifies_format" onclick="reveal_sentences(this.id)" color=yellow style="text-transform: uppercase";>specifies format</font>
+</br><font size=1 id="stage_potentially" onclick="reveal_sentences(this.id)" color=grey style="text-transform: capitalize";>stage potentially</font>
+<font size=1 id="stages_software" onclick="reveal_sentences(this.id)" color=red style="text-transform: lowercase";>stages software</font>
+<font size=2 id="standard_specifies" onclick="reveal_sentences(this.id)" color=red style="text-transform: capitalize";>standard specifies</font>
+<font size=1 id="stipulate_whether" onclick="reveal_sentences(this.id)" color=green style="text-transform: uppercase";>stipulate whether</font>
+</br><font size=1 id="system_test" onclick="reveal_sentences(this.id)" color=black style="text-transform: lowercase";>system test</font>
+<font size=1 id="system_testing" onclick="reveal_sentences(this.id)" color=red style="text-transform: uppercase";>system testing</font>
+<font size=1 id="test_documentation" onclick="reveal_sentences(this.id)" color=orange style="text-transform: uppercase";>test documentation</font>
+<font size=1 id="testing_stage" onclick="reveal_sentences(this.id)" color=black style="text-transform: capitalize";>testing stage</font>
+</br><font size=1 id="testing_system" onclick="reveal_sentences(this.id)" color=blue style="text-transform: uppercase";>testing system</font>
+<font size=1 id="type_document" onclick="reveal_sentences(this.id)" color=green style="text-transform: uppercase";>type document</font>
+<font size=1 id="use_eight" onclick="reveal_sentences(this.id)" color=grey style="text-transform: lowercase";>use eight</font>
+<font size=1 id="whether_must" onclick="reveal_sentences(this.id)" color=red style="text-transform: capitalize";>whether must</font>
+</br></body></html>
